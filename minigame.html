@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Input</title>
+<style>
+
+body {
+    background-image: url("Concrete-road-Maplestory.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.btn2{
+     position:absolute; left: 50px; top:570px;
+}
+.btn3{
+    position: absolute; left: 350px; top:570px;
+}
+.btn4{
+    position: absolute;left: 650px;top:570px;
+}
+
+.btn5{
+    position: absolute; left: 650px; top:400px;
+}
+.btn6{
+    position: absolute; left: 650px; top:300px;
+}
+.btn7{
+    position: absolute; left: 850px; top:300px;
+}
+.btn8{
+    position: absolute; left: 1150px; top:320px;
+}
+.btn9{
+    position: absolute; left: 1150px; top:400px;
+}
+.btn10{
+    position: absolute; left: 1200px; top:570px;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+        <div style="position:absolute; right:50px; top:50px;" ><button class="button">Move List : RIGHT, JUMP<br> CLIMB, DESCEND<br>START, PORTAL.</button></div> 
+    
+
+ <input id="input001" type="text" /><button id="bid1" onclick="btn001()">Let's Start</button>
+ <p id="message001"></p>
+ <img id="image1" src="archer.png" style="display:none;" width="120" height="120"/>
+<script>
+    function btn001() {
+        var text001;
+        var colors001 = input001.value;
+        var player = document.getElementById("image1");
+        var buttonOne = document.getElementById("bid1");
+        if (colors001=="START") {
+            document.getElementById("input001").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "50px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid2");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.left = "50px";
+            buttonOne.style.top = "470px";
+            txt.style.display = "block";
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    }
+    function btn2() {
+        var text001;
+        var colors001 = input2.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input2").style="left:350px";
+        if (colors001=="RIGHT") {
+            document.getElementById("input2").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "350px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid2");
+            var buttonTwo = document.getElementById("bid3");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "350px";
+            buttonOne.style.top = "470px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "350px";
+            buttonTwo.style.top = "470px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn3() {
+        var text001;
+        var colors001 = input3.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input3").style="left:350px";
+        if (colors001=="RIGHT") {
+            document.getElementById("input3").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "650px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid3");
+            var buttonTwo = document.getElementById("bid4");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "650px";
+            buttonOne.style.top = "470px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "650px";
+            buttonTwo.style.top = "470px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn4() {
+        var text001;
+        var colors001 = input4.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input4").style="left:350px";
+        if (colors001=="CLIMB") {
+            document.getElementById("input4").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "650px";
+            player.style.top = "300px";
+            var buttonOne = document.getElementById("bid4");
+            var buttonTwo = document.getElementById("bid5");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "650px";
+            buttonOne.style.top = "317px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "650px";
+            buttonTwo.style.top = "317px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn5() {
+        var text001;
+        var colors001 = input5.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input5").style="left:350px";
+        if (colors001=="CLIMB") {
+            document.getElementById("input5").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "650px";
+            player.style.top = "150px";
+            var buttonOne = document.getElementById("bid5");
+            var buttonTwo = document.getElementById("bid6");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "650px";
+            buttonOne.style.top = "167px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "650px";
+            buttonTwo.style.top = "167px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn6() {
+        var text001;
+        var colors001 = input6.value;
+        var player = document.getElementById("image1");
+        
+        if (colors001=="RIGHT") {
+            document.getElementById("input6").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "850px";
+            player.style.top = "155px";
+            var buttonOne = document.getElementById("bid6");
+            var buttonTwo = document.getElementById("bid7");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "850px";
+            buttonOne.style.top = "172px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "850px";
+            buttonTwo.style.top = "172px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn7() {
+        var text001;
+        var colors001 = input7.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input7").style="left:350px";
+        if (colors001=="JUMP") {
+            document.getElementById("input7").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "1150px";
+            player.style.top = "225px";
+            var buttonOne = document.getElementById("bid7");
+            var buttonTwo = document.getElementById("bid8");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "1150px";
+            buttonOne.style.top = "242px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "1150px";
+            buttonTwo.style.top = "242px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn8() {
+        var text001;
+        var colors001 = input8.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input8").style="left:350px";
+        if (colors001=="DESCEND") {
+            document.getElementById("input8").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "1200px";
+            player.style.top = "295px";
+            var buttonOne = document.getElementById("bid8");
+            var buttonTwo = document.getElementById("bid9");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "1200px";
+            buttonOne.style.top = "312px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "1200px";
+            buttonTwo.style.top = "312px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn9() {
+        var text001;
+        var colors001 = input9.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input9").style="left:350px";
+        if (colors001=="DESCEND") {
+            document.getElementById("input9").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "1200px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid9");
+            var buttonTwo = document.getElementById("bid10");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "1200px";
+            buttonOne.style.top = "470px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "1200px";
+            buttonTwo.style.top = "470px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn10() {
+        var text001;
+        var colors001 = input10.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input10").style="left:350px";
+        if (colors001=="PORTAL") {
+            document.getElementById("input10").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "1250px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid10"); 
+            var buttonOne = document.getElementById("bid11");  
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "1250px";
+            buttonOne.style.top = "470px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "1250px";
+            buttonTwo.style.top = "470px";
+        
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+   
+    }
+    function btn11() {
+        var text001;
+        var colors001 = input11.value;
+        var player = document.getElementById("image1");
+        
+        document.getElementById("input9").style="left:350px";
+        if (colors001=="PORTAL") {
+            document.getElementById("input9").style="display:none";
+            text001 = "The color is blue";
+            document.getElementById("message001").innerHTML = text001;
+            player.style.display="block";
+            player.style.position = "absolute";
+            player.style.left = "1300px";
+            player.style.top = "453px";
+            var buttonOne = document.getElementById("bid11");
+            var buttonTwo = document.getElementById("bid11");
+            buttonOne.style.position = "absolute";
+            buttonOne.style.display = "none";
+            buttonOne.style.left = "1300px";
+            buttonOne.style.top = "470px";
+            buttonTwo.style.position = "absolute";
+            buttonTwo.style.display = "block";
+            buttonTwo.style.left = "1300px";
+            buttonTwo.style.top = "470px";
+        
+            
+        }
+        else {text001 = "Try Again"; document.getElementById("message001").innerHTML = text001;}
+    
+       
+   
+    }
+
+</script>
+<input class="btn2" id="input2" type="text" /><button id="bid2" onclick="btn2()">2</button>
+<input class="btn3" id="input3" type="text" /><button id="bid3" onclick="btn3()">3</button>
+<input class="btn4" id="input4" type="text" /><button id="bid4" onclick="btn4()">4</button>
+<input class="btn5" id="input5" type="text" /><button id="bid5" onclick="btn5()">5</button>
+<input class="btn6" id="input6" type="text" /><button id="bid6" onclick="btn6()">6</button>
+<input class="btn7" id="input7" type="text" /><button id="bid7" onclick="btn7()">7</button>
+<input class="btn8" id="input8" type="text" /><button id="bid8" onclick="btn8()">8</button>
+<input class="btn9" id="input9" type="text" /><button id="bid9" onclick="btn9()">9</button>
+<input class="btn10" id="input10" type="text" /><button id="bid10" onclick="btn10()">10</button>
+<input class="btn11" id="input11" type="text" /><button id="bid11" onclick="btn11()">You Win!</button>
+
+
+</body>
+</html>
