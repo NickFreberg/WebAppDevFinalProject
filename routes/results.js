@@ -1,4 +1,3 @@
-// 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
@@ -9,7 +8,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video', {
+  player = new YT.Player("video", {
     height: '390',
     width: '640',
     videoId: '6CGyASDjE-U',
@@ -18,6 +17,8 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
     }
   });
+
+  
 } 
 
 // 4. The API will call this function when the video player is ready.
