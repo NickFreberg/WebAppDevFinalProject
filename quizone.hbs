@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{#if user}}
+<p>Welcome, <strong>{{user.username}}</strong> !</p>
+{{/if}}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--button referenced from w3 -->
+<style>
+body {
+
+    background-image: url(https://i.pinimg.com/originals/70/28/1d/70281dfeb0fbdcf7c5f605fb57db7038.png);
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: 100% 100%;
+
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+</style>
+
+
+</head>
+
+<body>
+    <form method="post" action="/exam/quizone">
+    <!--Bottom Row for Responses-->
+         <!--Middle Row for Responses-->
+   <p style="position:absolute; left:500px; top:75px;"><font size="6"><strong>What genre of game?</strong></font></p>
+
+   <div style="position:absolute; left:180px; top:150px;" ><button class="button" type="button" id="btn9">Action/Adventure/RPG(100)</button></div> 
+   <div style="position:absolute; left:550px; top:150px;" ><button class="button" type="button"id="btn10">Shooter/Fighter(200)</button></div> 
+   <div style="position:absolute; right:400px; top:150px;" ><button class="button" type="button"id="btn11">Puzzle Game(300)</button></div> 
+   <div style="position:absolute; right:180px; top:150px;" ><button class="button" type="button"id="btn12">Other(400)</button></div> 
+   <div style="position:absolute; right:400px; top:600px;" ><input type="text" name="final" placeholder="Number"></div> 
+    <br><div style = "position:absolute; right:450px; top:500px;">&nbsp;</div><input type="submit" value="Submit">
+       
+    </form>
+</body>
+
+<script>
+document.getElementById("btn9").addEventListener("click", function(){
+    document.getElementById("btn10").style.visibility = 'hidden';
+    document.getElementById("btn11").style.visibility = 'hidden';
+    document.getElementById("btn12").style.visibility = 'hidden';
+});
+document.getElementById("btn10").addEventListener("click", function(){
+    document.getElementById("btn11").style.visibility = 'hidden';
+    document.getElementById("btn12").style.visibility = 'hidden';
+    document.getElementById("btn9").style.visibility = 'hidden';
+});
+document.getElementById("btn11").addEventListener("click", function(){
+    document.getElementById("btn12").style.visibility = 'hidden';
+    document.getElementById("btn9").style.visibility = 'hidden';
+    document.getElementById("btn10").style.visibility = 'hidden';
+});
+document.getElementById("btn12").addEventListener("click", function(){
+    document.getElementById("btn11").style.visibility = 'hidden';
+    document.getElementById("btn10").style.visibility = 'hidden';
+    document.getElementById("btn9").style.visibility = 'hidden';
+});
+
+
+</script>
+
+</html>
