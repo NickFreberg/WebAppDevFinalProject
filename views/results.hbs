@@ -5,31 +5,132 @@ Name: Type name(s) here
 -->
 <head>
   <meta charset="utf-8">
-  <title>Offscreen test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>GameMatch! Here's your results</title>
   <style>
-      .overlayleft{
-            position:absolute;
-            float:left;
-            color: white;  
-            top: 130px; 
-            left: 100px; 
+      @media only screen and (max-width:720px)
+	        	{
+		        	.tablet {display:none;}
+			        .desktop {display:none;}
+		        }
+		/* CSS rules for tablets */
+		@media only screen and (min-width:721px) and (max-width:960px)
+		{
+			.desktop {display:none;}
+			.phone {display:none;}
+		    }
+		    /* CSS rules for desktops */
+		@media only screen and (min-width:961px)
+		{
+		.tablet {display:none;}
+		.phone {display:none;}
+		}
+        .rightList{
+            position: fixed;
+            right:90%;
+            top:10%;
         }
-    body {margin-left: 200px; margin-right: 100px;}
+        #videoBG{
+            position:absolute;
+            top: 0;
+            left: 0;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    body {
+        
+        background-image: url(https://steamuserimages-a.akamaihd.net/ugc/867359279612927501/D766C168C3B82E4CAD5D6D06B3F628C32A4F0E0E/);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        text-emphasis-color: #eeeeee;
+        margin-left: 400px; margin-right: 300px};
+
+        h1{
+            color: white;
+            font-family: "Arial", Arial, sans-serif;
+        }
+        
+        
+        
+        
+    
   </style>
+
+  
+
 </head>
 <body>
-  <h1><strong></strong></h1>
+    
+  <h1><strong>{{Game Title}}</strong></h1>
+<p> 
 
+</p>
   <!-- 1. The <iframe> (and video player) will replace this <div> tag.  -->
-  <div id="game name"></div>
+  <div class = "vid">
+
+  </div>
+
   <p>
     Description:
     <div id="description"> </div>
      <br>
      Metacritic score:
-     <div id=meta
+     <div id=meta></div>
+     <script  src="results.js">
+     
+     </script>
 
-  </p>
-  <script  src="results.js"></script>
+<div class = "noMargin">
+        <video id="videoBG" autoplay loop muted src="<source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">" type ="video/mp4">
+            
+        </video>
+    </div>
+<div>
+
+<div class="box">
+<p> Not a fan?<br><strong>Check out these other games </strong> </p>
+<table id="projectgames" style="padding: 100px; width:40%; border-style:none;">
+<thead>
+<tr style="background-color: rgb(59, 128, 180); color:white;"><th>Game Name</th><th>metascore</th><th>Q1 Score</th><th>Q2 Score</th><th>Q3 Score</th></tr>
+</thead>
+<tbody>
+<tr style="background-color: white;"><td> {{ gamename }}</td>
+    <td> {{ metascore }}</td>
+    <td>{{q1}}</td>
+    <td> {{ q2 }}</td>
+    <td>{{q3}}</td>
+</tr>
+<h3 style="color:white;">Game Database is empty</h3>
+</tbody>
+</table> <br><hr>
+<div>
+
+</p>
+
+
+
+
+<div>
+        <ul class = "rightList">
+            <ul class = "desktop">
+               <ul class ="fa-ul">
+                       <li><i class="fa-li fa fa-address-card"></i><a href= "http://nickfreberg.github.io/AboutMe.html">About Me</a></li>
+                       <li><i class="fa-li fa fa-cog fa-spin"></i><a href= "http://nickfreberg.github.io/Resume.pdf">Resume</a></li>
+                       <li><i class="fa-li fa fa-gamepad"></i><a href= "https://www.twitch.tv/technickality_gaming">Hobbies</a></li>
+                       <li><i class="fa-li fa fa-briefcase"></i><a href= "https://www.linkedin.com/in/nicholascfreberg/" >Work</li>
+               </ul>
+                   </ul>
+               </ul>
+               </div>
+               
+
+               
+
+  
+  
 </body>
 </html>
