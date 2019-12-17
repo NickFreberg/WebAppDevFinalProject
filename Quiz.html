@@ -5,7 +5,7 @@
 <head>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+<!--button referenced from w3 -->
 <style>
     body {
 
@@ -27,6 +27,28 @@ font-size:xx-large;
 
 }
 
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 </style>
 
 
@@ -44,46 +66,49 @@ font-size:xx-large;
     <div class="row">
 
 
-
+        <!--Top Row for Responses-->
         <p style="position:absolute; left:500px; top:75px;"><font size="6"><strong>What genre of game?</strong></font></p>
 
-       <div style="position:absolute; left:180px; top:150px;" ><button type="button" onclick="alert('Your response has been recorded!')">Action/Adventure/RPG</button></div> 
+       <div style="position:absolute; left:180px; top:150px;" ><button class="button" onclick="alert('Your response has been recorded!')">Action/Adventure/RPG</button></div> 
 
-       <div style="position:absolute; left:480px; top:150px;" ><button type="button" onclick="alert('Your response has been recorded!')">Shooter/Fighting</button></div> 
+       <div style="position:absolute; left:550px; top:150px;" ><button class="button" onclick="alert('Your response has been recorded!')">Shooter/Fighting</button></div> 
 
-       <div style="position:absolute; right:480px; top:150px;" ><button type="button" onclick="alert('Your response has been recorded!')">Puzzle/Family/Party Game</button></div> 
+       <div style="position:absolute; right:400px; top:150px;" ><button class ="button" onclick="alert('Your response has been recorded!')">Puzzle/Family/Party Game</button></div> 
 
-       <div style="position:absolute; right:180px; top:150px;" ><button type="button" onclick="alert('Your response has been recorded!')">Other</button></div> 
+       <div style="position:absolute; right:180px; top:150px;" ><button class="button" onclick="alert('Your response has been recorded!')">Other</button></div> 
 
      
 
 
-
+        <!--Middle Row for Responses-->
         <p style="position:absolute; left:500px; top:225px;"><font size="6"><strong>What type of gamer are you?</strong></font></p>
 
-        <div style="position:absolute; left:180px; top:300px;" ><button type="button" onclick="alert('Your response has been recorded!')">Total Noob</button></div> 
+        <div style="position:absolute; left:180px; top:300px;" ><button class="button" onclick="alert('Your response has been recorded!')">Total Noob</button></div> 
 
-        <div style="position:absolute; left:480px; top:300px;" ><button type="button" onclick="alert('Your response has been recorded!')">Filthy Casual</button></div> 
+        <div style="position:absolute; left:480px; top:300px;" ><button class="button" onclick="alert('Your response has been recorded!')">Filthy Casual</button></div> 
 
-        <div style="position:absolute; right:480px; top:300px;" ><button type="button" onclick="alert('Your response has been recorded!')">Hardcore Gamer</button></div> 
+        <div style="position:absolute; right:480px; top:300px;" ><button class="button" onclick="alert('Your response has been recorded!')">Hardcore Gamer</button></div> 
 
-        <div style="position:absolute; right:180px; top:300px;" ><button type="button" onclick="alert('Your response has been recorded!')">I Have No Life</button></div> 
-
-     
+        <div style="position:absolute; right:180px; top:300px;" ><button class="button" onclick="alert('Your response has been recorded!')">I Have No Life</button></div> 
 
      
 
+     
 
 
+        <!--Bottom Row for Responses-->
         <p style="position:absolute; left:500px; top:375px;"><font size="6"><strong>How long do you want to be occupied?</strong></font></p>
 
-        <div style="position:absolute; left:180px; top:450px;" ><button type="button" onclick="alert('Your response has been recorded!')">Maybe an hour</button></div> 
+        <div style="position:absolute; left:180px; top:450px;" ><button class="button" onclick="alert('Your response has been recorded!')">Maybe an hour</button></div> 
 
-        <div style="position:absolute; left:480px; top:450px;" ><button type="button" onclick="alert('Your response has been recorded!')">A few hours</button></div> 
+        <div style="position:absolute; left:480px; top:450px;" ><button class="button" onclick="alert('Your response has been recorded!')">A few hours</button></div> 
 
-        <div style="position:absolute; right:480px; top:450px;" ><button type="button" onclick="alert('Your response has been recorded!')">A day or two</button></div> 
+        <div style="position:absolute; left:750px; top:450px;" ><button class="button" onclick="alert('Your response has been recorded!')">A day or two</button></div> 
 
-        <div style="position:absolute; right:180px; top:450px;" ><button type="button" onclick="alert('Your response has been recorded!')">I want to marry this game</button></div> 
+        <div style="position:absolute; right:180px; top:450px;" ><button class="button" onclick="alert('Your response has been recorded!')">I want to marry this game</button></div> 
+        
+        <!--Submit button  for Responses-->
+        <div style="position:absolute; left:750px; top:600px;" ><button class="button">Submit</button></div> 
 
           
 
