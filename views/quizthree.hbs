@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!--button referenced from w3 -->
+<style>
+body {
+
+    background-image: url(https://i.pinimg.com/originals/70/28/1d/70281dfeb0fbdcf7c5f605fb57db7038.png);
+
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+
+    background-size: 100% 100%;
+
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+</style>
+
+
+</head>
+
+<body>
+    <form>
+    <!--Bottom Row for Responses-->
+        <p style="position:absolute; left:500px; top:375px;"><font size="6"><strong>How long do you want to be occupied?</strong></font></p>
+        <div style="position:absolute; left:180px; top:450px;" ><button class="button" type="button" id="btn9">Maybe an hour (2)</button></div> 
+        <div style="position:absolute; left:480px; top:450px;" ><button class="button" type="button" id="btn10" >A few hours(3)</button></div> 
+        <div style="position:absolute; left:750px; top:450px;" ><button class="button" type="button" id="btn11">A day or two(4)</button></div> 
+        <div style="position:absolute; right:180px; top:450px;" ><button class="button" type="button" id="btn12">I want to marry this game(5)</button></div> 
+        <div style="position:absolute; right:400px; top:600px;" ><input type="password" name="final" id="final" placeholder="Number"></div> 
+        <br><div style = "position:absolute; right:450px; top:500px;">&nbsp;</div><input type="submit" value="Submit">
+    </form>
+</body>
+
+<script>
+document.getElementById("btn9").addEventListener("click", function(){
+  document.getElementById("btn10").style.visibility = 'hidden';
+  document.getElementById("btn11").style.visibility = 'hidden';
+  document.getElementById("btn12").style.visibility = 'hidden';
+});
+document.getElementById("btn10").addEventListener("click", function(){
+  document.getElementById("btn11").style.visibility = 'hidden';
+  document.getElementById("btn12").style.visibility = 'hidden';
+  document.getElementById("btn9").style.visibility = 'hidden';
+});
+document.getElementById("btn11").addEventListener("click", function(){
+  document.getElementById("btn12").style.visibility = 'hidden';
+  document.getElementById("btn9").style.visibility = 'hidden';
+  document.getElementById("btn10").style.visibility = 'hidden';
+});
+document.getElementById("btn12").addEventListener("click", function(){
+  document.getElementById("btn11").style.visibility = 'hidden';
+  document.getElementById("btn10").style.visibility = 'hidden';
+  document.getElementById("btn9").style.visibility = 'hidden';
+});
+
+
+</script>
+
+</html>
